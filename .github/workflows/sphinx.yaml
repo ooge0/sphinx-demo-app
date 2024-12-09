@@ -37,9 +37,13 @@ jobs:
         run: ls -R docs/build
 
       - name: Deploy to GitHub Pages
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Use the default GitHub Actions token
         run: |
           if [ -d "docs/build/html" ]; then
             echo "Deploying to GitHub Pages"
+            git config --global user.name "github-actions[bot]"
+            git config --global user.email "github-actions[bot]@users.noreply.github.com"
             ghp-import -n -p -f docs/build/html
           else
             echo "Error: docs/build/html directory not found. Skipping deployment."
