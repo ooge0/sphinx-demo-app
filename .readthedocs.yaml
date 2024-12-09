@@ -4,11 +4,10 @@ sphinx:
   configuration: docs/source/conf.py
 
 formats:
-  - html  # You can add other formats if needed, such as pdf
+  - html
 
 build:
   image: readthedocs/build:latest
 
-# Include the 'html' directory (or any other static content directory)
 static:
   - html
