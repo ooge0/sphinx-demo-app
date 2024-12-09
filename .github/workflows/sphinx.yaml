@@ -38,12 +38,13 @@ jobs:
 
       - name: Deploy to GitHub Pages
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Use the default GitHub Actions token
+          GITHUB_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}
         run: |
           if [ -d "docs/build/html" ]; then
             echo "Deploying to GitHub Pages"
             git config --global user.name "github-actions[bot]"
             git config --global user.email "github-actions[bot]@users.noreply.github.com"
+            git remote set-url origin https://ooge0:${{ secrets.MY_GITHUB_TOKEN }}@github.com/ooge0/sphinx-demo-app.git
             ghp-import -n -p -f docs/build/html
           else
             echo "Error: docs/build/html directory not found. Skipping deployment."
