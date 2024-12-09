@@ -1,0 +1,279 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Publishing HTML Files &mdash; sphinx_demo_app 0.1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=2709fde1"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="File 4" href="file4.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            sphinx_demo_app
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="file1.html">File 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="file2.html">File 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="file3.html">File 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="file4.html">File 4</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Publishing HTML Files</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#prerequisites">Prerequisites</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#publishing-to-readthedocs-org">Publishing to ReadTheDocs.org</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#step-1-create-a-readthedocs-project">Step 1: Create a ReadTheDocs Project</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#step-2-configure-readthedocs">Step 2: Configure ReadTheDocs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#step-3-trigger-a-build">Step 3: Trigger a Build</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#step-4-maintain-updates">Step 4: Maintain Updates</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#publishing-to-github-pages">Publishing to GitHub Pages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#step-1-create-a-github-repository">Step 1: Create a GitHub Repository</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#step-2-add-html-files-to-the-repository">Step 2: Add HTML Files to the Repository</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#step-2-1-push-content-from-local-project-directory-to-the-remote-master">Step 2.1 Push content from local project directory to the remote ‘master ‘</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#step-3-enable-github-pages">Step 3: Enable GitHub Pages</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id1">Step 4: Maintain Updates</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#tips-for-managing-documentation">Tips for Managing Documentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#further-assistance">Further Assistance</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">sphinx_demo_app</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Publishing HTML Files</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/publishing_html_file.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="publishing-html-files">
+<h1>Publishing HTML Files<a class="headerlink" href="#publishing-html-files" title="Link to this heading"></a></h1>
+<p>This document provides step-by-step instructions for publishing the HTML documentation of your Python project to:</p>
+<ol class="arabic simple">
+<li><p>ReadTheDocs.org</p></li>
+<li><p>GitHub Pages</p></li>
+</ol>
+<section id="prerequisites">
+<h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p>Generated HTML files from Sphinx (<cite>_build/html</cite> directory).</p></li>
+<li><p>A GitHub account.</p></li>
+<li><p>ReadTheDocs account (if using ReadTheDocs.org).</p></li>
+</ul>
+</section>
+<section id="publishing-to-readthedocs-org">
+<h2>Publishing to ReadTheDocs.org<a class="headerlink" href="#publishing-to-readthedocs-org" title="Link to this heading"></a></h2>
+<section id="step-1-create-a-readthedocs-project">
+<h3>Step 1: Create a ReadTheDocs Project<a class="headerlink" href="#step-1-create-a-readthedocs-project" title="Link to this heading"></a></h3>
+<ol class="arabic simple">
+<li><p>Log in to your ReadTheDocs account at <a class="reference external" href="https://readthedocs.org/">https://readthedocs.org/</a>.</p></li>
+<li><p>Click on <strong>+ Import a Project</strong>.</p></li>
+<li><p>Select the <strong>Connect to GitHub</strong> option and authorize ReadTheDocs to access your repositories.</p></li>
+<li><p>Choose your project repository from the list or add a new repository.</p></li>
+</ol>
+</section>
+<section id="step-2-configure-readthedocs">
+<h3>Step 2: Configure ReadTheDocs<a class="headerlink" href="#step-2-configure-readthedocs" title="Link to this heading"></a></h3>
+<ol class="arabic simple">
+<li><p>Navigate to your project’s settings in ReadTheDocs.</p></li>
+<li><p>Under the <strong>Admin &gt; Advanced Settings</strong> section, specify the following:
+- <strong>Python configuration file</strong>: <cite>docs/conf.py</cite> (or the location of your <cite>conf.py</cite> file).
+- <strong>Documentation type</strong>: Sphinx HTML.
+- <strong>Requirements file</strong>: <cite>requirements.txt</cite> (if you have additional Python dependencies).</p></li>
+<li><p>Save the changes.</p></li>
+</ol>
+</section>
+<section id="step-3-trigger-a-build">
+<h3>Step 3: Trigger a Build<a class="headerlink" href="#step-3-trigger-a-build" title="Link to this heading"></a></h3>
+<ol class="arabic simple">
+<li><p>Trigger a build by clicking the <strong>Build Version</strong> button on the project’s dashboard.</p></li>
+<li><p>Once the build is complete, your documentation will be live at <cite>&lt;project-name&gt;.readthedocs.io</cite>.</p></li>
+</ol>
+</section>
+<section id="step-4-maintain-updates">
+<h3>Step 4: Maintain Updates<a class="headerlink" href="#step-4-maintain-updates" title="Link to this heading"></a></h3>
+<ol class="arabic simple">
+<li><p>Push changes to your GitHub repository.</p></li>
+<li><p>ReadTheDocs automatically rebuilds the documentation on new commits.</p></li>
+</ol>
+</section>
+</section>
+<section id="publishing-to-github-pages">
+<h2>Publishing to GitHub Pages<a class="headerlink" href="#publishing-to-github-pages" title="Link to this heading"></a></h2>
+<section id="step-1-create-a-github-repository">
+<h3>Step 1: Create a GitHub Repository<a class="headerlink" href="#step-1-create-a-github-repository" title="Link to this heading"></a></h3>
+<ol class="arabic simple">
+<li><p>Go to <a class="reference external" href="https://github.com/">https://github.com/</a>.</p></li>
+<li><p>Click on <strong>+ New Repository</strong>.</p></li>
+<li><p>Name the repository (e.g., <cite>sphinx-dempo-app</cite>).</p></li>
+<li><p>Set the repository as <strong>Public</strong>.</p></li>
+<li><p>Click <strong>Create Repository</strong>.</p></li>
+</ol>
+</section>
+<section id="step-2-add-html-files-to-the-repository">
+<h3>Step 2: Add HTML Files to the Repository<a class="headerlink" href="#step-2-add-html-files-to-the-repository" title="Link to this heading"></a></h3>
+<ol class="arabic simple">
+<li><p>Navigate to your project’s <cite>_build/html</cite> directory.</p></li>
+<li><p>Copy the entire contents of the <cite>html</cite> directory.</p></li>
+<li><p>Clone the GitHub repository locally:</p></li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/oogeo/readthedocs-demo-app.git
+</pre></div>
+</div>
+<ol class="arabic simple" start="4">
+<li><p>Paste the HTML files into the cloned repository.</p></li>
+<li><p>Add, commit, and push the files to GitHub:</p></li>
+</ol>
+</section>
+<section id="step-2-1-push-content-from-local-project-directory-to-the-remote-master">
+<h3>Step 2.1 Push content from local project directory to the remote ‘master ‘<a class="headerlink" href="#step-2-1-push-content-from-local-project-directory-to-the-remote-master" title="Link to this heading"></a></h3>
+<p>Navigate to your local project directory</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span>/path/to/your/local/project
+</pre></div>
+</div>
+<p>Initialize a GIT repository locally</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>init
+</pre></div>
+</div>
+<p>Add remote repository</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>remote<span class="w"> </span>add<span class="w"> </span>origin<span class="w"> </span>https://github.com/oogeo/readthedocs-demo-app.git
+</pre></div>
+</div>
+<p>Add local changes</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>add<span class="w"> </span>.
+</pre></div>
+</div>
+<p>Commit local changes</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;Initial commit with existing local project content&quot;</span>
+</pre></div>
+</div>
+<p>Set remote ‘master’ branch and upstream branch</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>branch<span class="w"> </span>-M<span class="w"> </span>master
+</pre></div>
+</div>
+<p>Push your local changes to the remote repository:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>push<span class="w"> </span>-u<span class="w"> </span>origin<span class="w"> </span>master<span class="w"> </span>--force
+</pre></div>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Using <cite>–force</cite> will overwrite the content in the remote repository. Make sure you really want to replace the remote content with your local content before proceeding. If you’re working with collaborators or need to preserve the existing history, a different approach involving merging or rebasing should be used.</p>
+</div>
+</section>
+<section id="step-3-enable-github-pages">
+<h3>Step 3: Enable GitHub Pages<a class="headerlink" href="#step-3-enable-github-pages" title="Link to this heading"></a></h3>
+<ol class="arabic simple">
+<li><p>Go to your repository on GitHub.</p></li>
+<li><p>Navigate to <strong>Settings &gt; Pages</strong>.</p></li>
+<li><p>Under <strong>Source</strong>, select the <cite>main</cite> branch and <cite>/ (root)</cite> folder.</p></li>
+<li><p>Click <strong>Save</strong>.</p></li>
+<li><p>Your documentation will be live at <cite>https://&lt;username&gt;.github.io/project-docs/</cite>.</p></li>
+</ol>
+</section>
+<section id="id1">
+<h3>Step 4: Maintain Updates<a class="headerlink" href="#id1" title="Link to this heading"></a></h3>
+<ol class="arabic simple">
+<li><p>Update the <cite>_build/html</cite> directory in your local repository.</p></li>
+<li><p>Push changes to GitHub:</p></li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>add<span class="w"> </span>.<span class="w"> </span>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;Update documentation&quot;</span><span class="w"> </span>git<span class="w"> </span>push<span class="w"> </span>origin<span class="w"> </span>main
+</pre></div>
+</div>
+</section>
+</section>
+<section id="tips-for-managing-documentation">
+<h2>Tips for Managing Documentation<a class="headerlink" href="#tips-for-managing-documentation" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p>Always generate updated HTML files using Sphinx before publishing.</p></li>
+<li><p>Keep the <cite>conf.py</cite> and <cite>requirements.txt</cite> files updated with any project changes.</p></li>
+<li><p>Use meaningful commit messages for documentation updates.</p></li>
+</ul>
+</section>
+<section id="further-assistance">
+<h2>Further Assistance<a class="headerlink" href="#further-assistance" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p>ReadTheDocs documentation: <a class="reference external" href="https://docs.readthedocs.io/">https://docs.readthedocs.io/</a></p></li>
+<li><p>GitHub Pages guide: <a class="reference external" href="https://docs.github.com/en/pages">https://docs.github.com/en/pages</a></p></li>
+</ul>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="file4.html" class="btn btn-neutral float-left" title="File 4" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, author_me.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
