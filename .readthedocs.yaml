@@ -1,14 +1,14 @@
 version: 2
 
 sphinx:
-  configuration: docs/source/conf.py  # Path to your Sphinx configuration file
+  configuration: docs/source/conf.py
 
 formats:
   - html  # You can add other formats if needed, such as pdf
 
 build:
-  image: readthedocs/build:latest  # Docker image used for building your project
+  image: readthedocs/build:latest
 
 # Include the 'html' directory (or any other static content directory)
 static:
-  - html  # Path to your static content (relative to the root of your repo)
+  - html
